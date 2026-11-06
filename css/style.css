@@ -1,0 +1,987 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-image: url(images/stripe.png);
+    font-size: .85em;
+    font: normal .8em/1.5em Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+.error{
+	border-style: solid;
+	border-color:red !important;
+	background: #FEF1E1;
+}	
+
+label.error{
+	display:none !important;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #696969;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width:1020px;
+    background-color: #fff;
+}
+
+header
+{
+    width: auto;
+    width:1020px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    background-repeat: repeat-x;
+    background-image: url('images/encabezado.png');
+    box-shadow: 10px 0px 40px #888888;
+    border-radius: 10px 10px 0px 0px; 
+    z-index:3;
+    
+}
+
+#fondoEncabezadoAut
+{
+    width:1020px;
+    height: 100px;
+    background-image: url('images/h1_importador600X100.jpg');
+    z-index:5;
+}
+
+#fondoEncabezadoSinAut
+{
+    width:1020px;
+    height: 140px;
+    background-image: url('images/h1_importador.jpg');
+    z-index:5;
+}
+
+#main 
+{
+
+    padding-left: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 40px #888888;
+    border-radius: 0px 0px 10px 10px; 
+    min-height: 600px;
+    height:auto;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position:relative;
+    z-index:2;
+    overflow:auto;
+}
+
+footer, 
+#footer {
+    
+    color: #F28510;
+    padding: 10px 0;
+    text-align: center;
+
+    
+    font-size: .9em;
+
+
+
+    width:1020px;
+
+    position:absolute;
+
+    z-index:3;
+}
+
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+    max-width: 940px;  
+    
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width:260px;
+}
+
+input[type=text] {
+	color: #444;
+    width:260px;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+    width: 930px;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.5em;
+    display: block;
+    text-align:right;
+    margin: 10px;
+    color: #F28510;
+    top:40px;
+    position:absolute;
+    width:1000px;    
+}
+
+#cambiarContrasena {
+    font-size: 1.1em;
+    display: block;
+    text-align:right;
+    margin: 10px;
+    color: White;
+    top:65px;
+    position:absolute;
+    width:1000px;    
+    z-index:1000;
+}
+
+
+#logindisplay a:link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cambiarContrasena a:link {
+    color: #9c3e3e;
+    text-decoration: underline;
+}
+
+#cambiarContrasena a:visited {
+    color: #9c3e3e;
+    text-decoration: underline;
+}
+
+#cambiarContrasena a:hover {
+    color: #9c3e3e;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+#loginForm
+{
+    text-align: center;
+    box-shadow: 10px 10px 40px #888888;
+    border-radius: 10px; 
+    position: relative; 
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    background-color: #F1F1F1;
+    top: 150px;
+    overflow: auto;
+    width: 300px;
+    border:1px solid #ccc;
+    z-index: 10;
+}
+
+#loginForm h2
+{
+    color:#696969;   
+}
+
+.mensaje{
+    min-height: 18px;
+    width: 500px;
+    padding: 4px 2px;
+    display: block;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #5E5E5E;
+    margin: 0 auto;
+    position:absolute; 
+
+}
+.mensaje span.msj{
+    display: block;
+    width: 474px;
+    padding-left: 4px;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+}
+.mensaje span.img{
+    display: block;
+    height: 16px;
+    width: 16px;
+    float: left;
+}
+.mensajeInfo{
+    background-color: #DCE4EF;
+    border: 1px #3E5F86 solid;
+}
+.mensajeError{
+    background-color: #F3C5C2;
+    border: 1px #CD0A0A solid;
+}
+.mensajeCargando{
+    background-color: #F1F1F1;
+    border: 1px  #949494 solid;    
+}
+
+.mensajeOK{
+    background-color: #D8E8D7;
+    border: 1px solid #006600;
+}
+.mensajePreventivo{
+    background-color: #F9F2C1;
+    border: 1px solid #FF9933;
+}
+.mensajeInfo span.img{
+    background-image: url('images/information.png');
+}
+.mensajeError span.img{
+    background-image: url('images/cross.png');
+}
+.mensajeCargando span.img{
+    background-image: url('images/cargando.gif');
+}
+.mensajeOK span.img{
+    background-image: url('images/tick.png');
+}
+.mensajePreventivo span.img{
+    background-image: url('images/error.png');
+}
+
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#8f8b8b;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;	
+	min-width:130px;
+	width: auto;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+
+/*Menu*/
+
+#nav {
+	margin: 0;
+	padding: 7px 6px 0;
+	background: #F1F1F1 url(images/gradient.png) repeat-x 0 -110px;
+	line-height: 100%;
+    top:-3px;
+    position:absolute;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+	
+	width: 1009px;
+	margin: 100px auto;
+
+}
+#nav li {
+	margin: 0 5px;
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+
+/* main level link */
+#nav a {
+	font-weight: bold;
+	color: #DF7A0E;
+	text-decoration: none;
+	display: block;
+	padding:  8px 20px;
+	margin: 0;
+	
+	
+}
+#nav a:hover {
+	background: #000;
+	color: #fff;
+}
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	background: #666 url(images/gradient.png) repeat-x 0 -40px;
+	color: #444;
+	border-top: solid 1px #f8f8f8;
+
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0 1px 1px rgba(0,0,0, .2);
+
+	text-shadow: 0 1px 0 rgba(255,255,255, 1);
+}
+
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a {
+	background: none;
+	border: none;
+	color: #666;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#nav ul a:hover {
+	background: #DF7A0E url(images/gradient.png) repeat-x 0 -100px !important;
+	color: #fff !important;
+
+	text-shadow: 0 1px 1px rgba(0,0,0, .1);
+}
+
+/* dropdown */
+#nav li:hover > ul {
+	display: block;
+}
+
+/* level 2 list */
+#nav ul {
+	display: none;
+
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	background: #ddd url(images/gradient.png) repeat-x 0 0;
+	border: solid 1px #b4b4b4;
+
+	padding:  8px 20px;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	box-shadow: 0 1px 3px rgba(0,0,0, .3);
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #fff;
+}
+
+/* level 3+ list */
+#nav ul ul {
+	left: 181px;
+	top: -3px;
+}
+
+/* rounded corners of first and last link */
+#nav ul li:first-child > a {
+	-webkit-border-top-left-radius: 9px;
+	-moz-border-radius-topleft: 9px;
+
+	-webkit-border-top-right-radius: 9px;
+	-moz-border-radius-topright: 9px;
+}
+#nav ul li:last-child > a {
+	-webkit-border-bottom-left-radius: 9px;
+	-moz-border-radius-bottomleft: 9px;
+
+	-webkit-border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomright: 9px;
+}
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav {
+	display: inline-block;
+} 
+html[xmlns] #nav {
+	display: block;
+}
+ 
+* html #nav {
+	height: 1%;
+}
+
+/* Subir Ficheros*/
+
+/* Iconos */
+
+a.editar
+{
+     background: url(images/editar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */
+}
+
+a.descargar
+{
+     background: url(images/descargar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */
+}
+
+a.ayuda
+{
+     background: url(images/ayuda.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */
+}
+
+a.detalles
+{
+     background: url(images/detalles.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */
+}
+
+a.eliminar
+{
+     background: url(images/eliminar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */     
+}
+a.regresar
+{
+     background: url(images/regresar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */     
+}
+
+a.cancelar
+{
+     background: url(images/cancelar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */     
+}
+a.agregar
+{
+     background: url(images/agregar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */      
+     position:absolute;
+}
+
+a.aceptar
+{
+     background: url(images/aceptar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */      
+     position:absolute;
+}
+
+.buscar{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	background: url('images/buscar.png') no-repeat 0 0;
+	cursor: pointer;
+    width: 50px;
+    height: 33px;
+	text-align: center;
+}
+
+.grafica{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	background: url('images/generar_grafica.png') no-repeat 0 0;
+	cursor: pointer;
+    width: 145px;
+    height: 30px;
+	text-align: center;
+}
+
+a.buscar
+{
+     background: url(images/buscar.png) no-repeat top left;
+     display: inline-block;
+     width: 42px;
+     height: 32px;
+     text-indent: -9999px; /* hides the link text */      
+     position:absolute;
+}
+
+.guardar{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	background: url('images/guardar.png') no-repeat 0 0;
+	cursor: pointer;
+    width: 50px;
+    height: 33px;
+	text-align: center;
+}
+
+
+/** Formulario **/
+
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+    font-weight:bold;
+	font-size:12px;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.editor-field-long textarea{
+margin: 0.5em 0 0 0;
+	width:500px;
+	height:30px;
+}
+
+.display-form{
+	float:left; 
+	margin-right:20px; 
+	width:270px;
+	min-height: 70px;
+}
+
+.display-form-long{
+	float:left; 
+	margin-right:20px; 
+	width:540px;
+	min-height: 70px;
+}
+
+/*  Detalle Formulario  */
+
+#detalleFormulario 
+{
+    display:none;
+}
+
+#detalleFormularioRegistrar
+{
+    display:none;
+}
+
+#detalleFormularioEditar
+{
+    display:none;
+}
+
+
+#buscarIndicador
+{
+    display:none;
+}
+/*  Confirm */
+
+#alertcontainer { display: none; }
+
+
+#alertbg {
+
+  position: fixed;
+
+  z-index: 1000;
+
+  top: 0;
+
+  left: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  background: black;
+
+  opacity: 0.50;
+
+}
+
+
+
+#messagefg {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  z-index: 5000;
+
+  display: none;
+
+}
+
+
+
+#messagefg div div {
+
+  width: 500px;
+
+  position: fixed;
+
+  top: 30%;
+
+  left: 50%;
+
+  margin-left: -250px;
+
+  border: 2px solid white;
+
+  border-radius: 5px;
+
+  text-align: left;
+
+  font-size: 15px;
+
+  color: #505050;
+
+  font-weight: bold;
+
+  box-shadow: 2px 2px 5px #888;
+
+  padding: 0 10px 0 15px;
+
+  background: #c0c0c0;
+
+}
+
+
+
+#messagefg div div p.userapprovebuttons {
+
+  margin-top: 0;
+
+  padding: 0;
+
+  text-align:right;
+
+}
+
+/*
+.NFI-wrapper {}
+.NFI-button {}
+.NFI-button:hover {}
+.NFI-filename {}
+.NFI-current {}
+*/
+
+
+.nice .NFI-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+
+	background-color:#ededed;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+
+	color:#8f8b8b;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	min-width:130px;
+	width: auto;
+    
+}
+.nice .NFI-button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+
+}
+.nice .NFI-filename {
+	-moz-border-radius-topright: 3px; 
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px; 
+	border-bottom-right-radius: 3px;
+
+	width: 200px;
+	border: solid #dcdcdc 1px;
+	border-left: none;
+	height: 40px;
+	line-height: 30px;
+
+	background: #fff;
+	-webkit-box-shadow: inset 0px 2px 0px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0px 2px 0px rgba(0,0,0,.05);
+	box-shadow: inset 0px 2px 0px rgba(0,0,0,.05); 
+
+	color: #777;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+.citas{
+margin-top:15px;
+	width:80%;
+	display:inline-block;
+}
+
+.operacionCita{
+	width:18%;
+	display:inline-block;
+}
+.meeting{
+
+    background: gainsboro;
+    border:8px solid #fff;
+
+}
+
+.manita{
+	cursor: pointer; 	
+}
+
+.vertical{
+	vertical-align:middle;
+}
+
+#operacionCitaContenido{
+	width:90%;
+	height:auto;
+	margin:0 auto;
+	padding: 0px 10px 0px 10px;	
+}
