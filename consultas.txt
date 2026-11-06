@@ -1,0 +1,2 @@
+INSERT INTO permiso (clave_operacion_permiso,clave_personal) values (8,53)
+delete from permiso where clave_operacion_permiso=8
